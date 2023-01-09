@@ -1,9 +1,10 @@
 import React from 'react'
+import { StyledActorCard } from './ActorCard.styled';
 
 const ActorCard = ({ image, name, gender, country, birthday, deathday }) => {
   return (
-    <div>
-      <div>
+    <StyledActorCard>
+      <div className='img-wrapper'>
         <img src={image} alt="actor" />
       </div>
       <h1>
@@ -11,8 +12,8 @@ const ActorCard = ({ image, name, gender, country, birthday, deathday }) => {
       </h1>
       <p>{country ? `Nationality: ${country}` : 'No nationality data'}</p>
       {birthday ? <p>Born on: {birthday}</p> : null}
-      <p>{deathday ? `Died: ${deathday}` : null}</p>
-    </div>
+      <p className='deathday'>{deathday ? `Died: ${deathday}` : null}</p>
+    </StyledActorCard>
   );
 };
 
