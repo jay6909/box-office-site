@@ -56,3 +56,16 @@ export const Star = styled.div`
     39% 35%
   );
 `;
+export const FavButton = styled.div`
+outline: none;
+      border: 1px solid #8e8e8e;
+      border-radius: 15px;
+      padding: 5px 20px;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+      }
+  background-color: ${props=>
+    (props.active?'#ffc806':'#ddd'
+  )};
+`;
