@@ -24,7 +24,7 @@ const ShowCard = ({ id, image, name, summary, onStarClick, isFav }) => {
         <Link to={`/show/${id}`}>Read more</Link>
         {/* <button type="button" onClick={onStarClick}> */}
            
-           <FavButton active={isFav} onClick={onStarClick}>Favorites</FavButton>
+           <FavButton active={isFav} onClick={onStarClick}>Favorite</FavButton>
         {/* </button> */}
       </div>
     </StyledShowCard>
